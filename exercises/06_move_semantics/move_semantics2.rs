@@ -28,7 +28,11 @@
 fn main() {
     let vec0 = vec![22, 44, 66];
 
+<<<<<<< HEAD:exercises/move_semantics/move_semantics2.rs
     let mut vec1 = fill_vec(&vec0);
+=======
+    let vec1 = fill_vec(vec0);
+>>>>>>> forked/main:exercises/06_move_semantics/move_semantics2.rs
 
     assert_eq!(vec0, vec![22, 44, 66]);
     assert_eq!(vec1, vec![22, 44, 66, 88]);

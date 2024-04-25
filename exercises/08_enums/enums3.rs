@@ -44,6 +44,7 @@ impl State {
     }
 
     fn process(&mut self, message: Message) {
+<<<<<<< HEAD:exercises/enums/enums3.rs
         // TODO: create a match expression to process the different message
         // variants
         // Remember: When passing a tuple as a function argument, you'll need
@@ -54,6 +55,11 @@ impl State {
             Message::Echo(s) => self.echo(s),
             Message::ChangeColor(r, g, b) => self.change_color((r, g, b)),
         }
+=======
+        // TODO: create a match expression to process the different message variants
+        // Remember: When passing a tuple as a function argument, you'll need extra parentheses:
+        // fn function((t, u, p, l, e))
+>>>>>>> forked/main:exercises/08_enums/enums3.rs
     }
 }
 

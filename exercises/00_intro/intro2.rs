@@ -7,6 +7,10 @@
 
 
 fn main() {
+<<<<<<< HEAD:exercises/intro/intro2.rs
     let world = "World";
     println!("Hello {}!", world);
+=======
+    printline!("Hello there!")
+>>>>>>> forked/main:exercises/00_intro/intro2.rs
 }
