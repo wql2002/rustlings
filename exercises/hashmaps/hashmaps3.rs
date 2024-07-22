@@ -40,12 +40,12 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         // team_1.
         // get team 1 entry
         let team_1_entry = scores.entry(team_1_name).or_insert(Team{ goals_scored: 0, goals_conceded: 0 });
-        (*team_1_entry).goals_scored += team_1_score;
-        (*team_1_entry).goals_conceded += team_2_score;
+        team_1_entry.goals_scored += team_1_score;
+        team_1_entry.goals_conceded += team_2_score;
         // get team 2 entry
         let team_2_entry = scores.entry(team_2_name).or_insert(Team{ goals_scored: 0, goals_conceded: 0 });
-        (*team_2_entry).goals_scored += team_2_score;
-        (*team_2_entry).goals_conceded += team_1_score;
+        team_2_entry.goals_scored += team_2_score;
+        team_2_entry.goals_conceded += team_1_score;
     }
     scores
 }
